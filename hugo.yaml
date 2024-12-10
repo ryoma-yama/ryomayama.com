@@ -1,4 +1,50 @@
 baseURL: https://ryomayama.com/
-languageCode: en-us
+languageCode: ja
 title: ryomayama.com
 theme: ["PaperMod"]
+defaultContentLanguage: ja
+hasCJKLanguage: true
+enableRobotsTXT: true
+permalinks:
+  posts: /:year/:month/:day/:slugorfilename/
+
+params:
+  # Site Variables
+  env: production
+  dateFormat: "2006-01-02"
+
+  # Theme
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  # Mode
+  homeInfoParams:
+    Title: "ryomayama.com"
+    Content: "ryomayama's Blog"
+
+  # Posts
+  showPostNavLinks: true
+  showShareButtons: true
+  shareButtons:
+    - x
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - name: Search
+      url: /search/
+      weight: 10
+    - name: Archives
+      url: /archives/
+      weight: 20
+    - name: Categories
+      url: /categories/
+      weight: 30
+    - name: Tags
+      url: /tags/
+      weight: 40
