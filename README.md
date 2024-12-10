@@ -18,6 +18,12 @@ git submodule update --init --recursive
 
 ## Create a new post
 
+Generate `posts/${currentDate}-${slug}/index.md` based on the given `${slug}`.
+```sh
+bin/create-new-post.sh ${slug}
+```
+
+Default command:
 ```sh
 hugo new posts/<article-name>.md
 ```
