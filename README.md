@@ -27,3 +27,8 @@ hugo new posts/<article-name>.md
 ```sh
 hugo server -D
 ```
+
+## License
+
+- **Code**: The code in this repository (including Hugo configurations and theme customizations) is licensed under the MIT License.
+- **Articles**: The articles and written content in this repository are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
