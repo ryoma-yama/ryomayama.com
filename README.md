@@ -1,6 +1,6 @@
 # My Blog
 
-- Live Site: [Example.com](https://example.com)
+- Live Site: [ryomayama.com](https://ryomayama.com)
 - Theme: [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
 
 ## Prerequisites
@@ -11,7 +11,7 @@
 ## Setup
 
 ```sh
-git clone https://github.com/<your-username>/example.com.git
+git clone https://github.com/ryoma-yama/ryomayama.com.git
 cd example.com
 git submodule update --init --recursive
 ```
