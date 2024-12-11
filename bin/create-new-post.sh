@@ -12,7 +12,8 @@ title=$(echo "$1" | tr ' ' '-')
 # Generate folder name using the current date and the title
 foldername="posts/$(date +%y%m%d)-${title}"
 
-# Create the folder and a new Hugo post file inside it
+# Create the folder and new Hugo post files inside it
+hugo new "${foldername}/index.en.md"
 hugo new "${foldername}/index.md"
 
 # Check if the operation was successful
