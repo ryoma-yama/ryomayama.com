@@ -39,17 +39,38 @@ outputs:
     - RSS
     - JSON
 
-menu:
-  main:
-    - name: Search
-      url: /search/
-      weight: 10
-    - name: Archives
-      url: /archives/
-      weight: 20
-    - name: Categories
-      url: /categories/
-      weight: 30
-    - name: Tags
-      url: /tags/
-      weight: 40
+languages:
+  ja:
+    weight: 1
+    languageCode: "ja-JP"
+    menu:
+      main:
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Archives
+          url: archives/
+          weight: 20
+        - name: Categories
+          url: categories/
+          weight: 30
+        - name: Tags
+          url: tags/
+          weight: 40
+  en:
+    weight: 2
+    languageCode: "en-US"
+    menu:
+      main:
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Archives
+          url: archives/
+          weight: 20
+        - name: Categories
+          url: categories/
+          weight: 30
+        - name: Tags
+          url: tags/
+          weight: 40
