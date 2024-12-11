@@ -82,12 +82,13 @@ hugo server
 - 以下が例。
 ```yaml
 baseURL: https://example.org/
-languageCode: en-us
+languageCode: ja
 title: ryomayama.com
 theme: ["PaperMod"]
 ```
 
 [^1]: [Language | Hugo](https://gohugo.io/methods/site/language/)
+
 ##  ついでにREADME.mdを作成する
 
 他の端末でもこの環境を動かす際に必要な情報を書いておくといい。
@@ -117,7 +118,7 @@ Cloudflareにアカウントを作成する手順は画面通りにするだけ�
 3. 「ビルドとデプロイのセットアップ」にて、**カスタムドメインを使うかどうかでビルドコマンドが変わる**。
 	1. カスタムドメインを使う場合: `hugo.yaml`のbaseURLにカスタムドメインを記載していればデフォルトの`hugo`のままでOK
 	2. カスタムドメインを使わない場合: ビルドコマンドを `hugo -b $CF_PAGES_URL` に変更してCloudflare Pagesが用意するドメインを利用する。この環境変数は自動で設定されるのでこちらで指定する必要はない。
-4. また、ビルド時の**環境変数としてHugoのVersionを設定する**必要がある。Cloudflare Pages標準のHugoのVersionだとPaperModをビルドできないので、ビルドを確認したローカルのVersionを指定する必要がある。ローカルに戻って `hugo version` でversionを確認して、これを `HUGO_VERSION=0.137.0` のように設定する。
+4. また、**ビルド時の環境変数としてHugoのVersionを設定する**必要がある。Cloudflare Pages標準のHugoのVersionだとPaperModをビルドできないので、ビルドを確認したローカルのVersionを指定する必要がある。ローカルに戻って `hugo version` でversionを確認して、これを `HUGO_VERSION=0.137.0` のように設定する。
 5. 保存してデプロイする。デプロイができてから実際にデプロイ先でサイトが見られるようになるまでには数分程度かかるので逸る気持ちを抑えて待ってほしい。
 	1. あと、カスタムドメインを設定したい場合はこのデプロイ後の画面に「カスタムドメインを設定する」というメニューがあるのでそこから設定できる。
 
