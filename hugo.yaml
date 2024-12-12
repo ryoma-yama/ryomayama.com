@@ -31,6 +31,7 @@ params:
   showShareButtons: true
   shareButtons:
     - x
+    - bluesky
   ShowCodeCopyButtons: true
 
 outputs:
