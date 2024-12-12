@@ -10,13 +10,13 @@ tags:
   - Bluesky
 ---
 
-Blueskyは旧Twitter・現Xからの移住先として最近話題の分散型SNSだ。分散型であることから、ユーザーが属するサーバーは個々で異なり、記事を共有する先を一意に特定するのが技術的に難しい。この点を理由に、PaperModではBluesky共有リンクの実装が見送られている[^1]。
+Blueskyは旧Twitter・現Xからの移住先として最近話題の、AT Protocolを用いた分散型SNSだ。分散型であることから、ユーザーが属するサーバーは個々で異なり、記事を共有する先を一意に特定するのが技術的に難しい。この点を理由に、PaperModではBluesky共有リンクの実装が見送られている[^1]。
 
 [^1]: > we cant have a single domain for a decentralised platform. you can't make it customisable because you need to ask user where he/she want to post it. | [add share icon for bluesky by geowarin · Pull Request #1629 · adityatelange/hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod/pull/1629#issuecomment-2480481785)
 
 しかし、BlueskyのWebクライアントである **bsky.app** のWebAPIを介することで、共有リンクをクリックしたユーザーのログイン状態に応じて所属サーバー（例: 公式サーバーの`bsky.social`）が動的に選択される仕組みが提供されている。この仕組みを利用すれば、分散型SNSの課題を回避しつつ記事を共有できる。
 
-ということで、以下では、この共有リンクをPaperModに追加する手順を説明する。
+ということで、以下では、このWebAPIを用いた共有リンクをPaperModに追加する手順を説明する。
 
 なおこの記事では、テーマとしてPaperModを用いているが、テンプレートのコードについては他のテーマでも参考になると思う。
 

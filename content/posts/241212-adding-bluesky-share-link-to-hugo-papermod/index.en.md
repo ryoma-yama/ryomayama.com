@@ -10,13 +10,13 @@ tags:
   - Bluesky
 ---
 
-Bluesky is a decentralized social network that has recently gained attention as an alternative to the former Twitter (now X). Due to its decentralized nature, user servers vary, making it technically challenging to create a universal sharing link. For this reason, Bluesky share links are not natively implemented in PaperMod[^1].
+Bluesky is a decentralized social network based on the AT Protocol that has recently gained attention as an alternative to the former Twitter (now X). Due to its decentralized nature, user servers vary, making it technically challenging to create a universal sharing link. For this reason, Bluesky share links are not natively implemented in PaperMod[^1].
 
 [^1]: > we cant have a single domain for a decentralised platform. you can't make it customisable because you need to ask user where he/she want to post it. | [add share icon for bluesky by geowarin · Pull Request #1629 · adityatelange/hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod/pull/1629#issuecomment-2480481785)
 
 However, Bluesky's web client, **bsky.app**, provides a mechanism via its Web API to dynamically select the appropriate server based on the login state of the user clicking the share link (e.g., the official server `bsky.social`). By leveraging this mechanism, articles can be shared without encountering the challenges posed by decentralization.
 
-This guide explains the process of adding this share link to PaperMod.
+This guide explains how to add a share link to PaperMod using the Web API.
 
 Although the theme used here is PaperMod, the template modifications discussed may also serve as a reference for other themes.
 
