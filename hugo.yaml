@@ -42,6 +42,8 @@ params:
     - x
     - bluesky
   ShowCodeCopyButtons: true
+  images:
+    - "images/ryomayama.com.png"
 
 outputs:
   home:
